@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "rickcraft",
+  "version": "${version}",
+  "name": "RickCraft",
+  "description": "",
+  "authors": ["py660"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/rickcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "py660.rickcraft.client.RickcraftDataGenerator"
+    ],
+    "client": [
+      "py660.rickcraft.client.RickcraftClient"
+    ],
+    "main": [
+      "py660.rickcraft.Rickcraft"
+    ]
+  },
+  "mixins": [
+    "rickcraft.mixins.json",
+    {
+      "config": "rickcraft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

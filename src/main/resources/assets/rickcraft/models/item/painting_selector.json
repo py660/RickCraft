@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/handheld",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [45, 100, 0],
+      "translation": [0, 4, 0]
+    },
+    "thirdperson_righthand": {
+      "rotation": [45, 100, 0],
+      "translation": [0, 4, 0]
+    }
+  },
+  "textures": {
+    "layer0": "rickcraft:item/painting_selector"
+  }
+}
